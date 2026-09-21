@@ -1,39 +1,74 @@
-# GrowthLens AI
+# GrowthLens AI — Intelligent Startup Investment & Solvency Analytics
 
-AI-powered startup investment platform. Investors analyze startups, chat with founders, and invest. Startups register, add metrics, apply for loans. Banks approve/reject loans. All amounts in **₹ Indian Rupees**.
+[![Next.js](https://img.shields.io/badge/Next.js-14.2-black?style=flat&logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=flat&logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38bdf8?style=flat&logo=tailwind-css)](https://tailwindcss.com/)
+[![Recharts](https://img.shields.io/badge/Recharts-2.12-22c55e?style=flat)](https://recharts.org/)
 
-## Features
+**GrowthLens AI** is a multi-role startup investment intelligence platform built with Next.js 14 and TypeScript. It bridges the transparency gap between early-stage startups, angel investors, banking institutions, and compliance administrators by providing algorithmic solvency checks, automated runway analysis, interactive financial telemetry, and contextual AI advisory.
 
-- **4 Roles**: Investor, Startup Owner, Bank, Admin
-- **Investor**: Browse startups → View details → AI Analysis → Ask AI → Chat with founder → Invest
-- **Startup Owner**: Register startup, add metrics (revenue, turnover, valuation, etc.), apply for loans
-- **Bank**: View loan requests, approve or reject
-- **Admin**: Approve startups, manage users, platform analytics
+---
 
-## Setup
+## 🌟 Key Features
 
-1. **Install Node.js** (v18+) from https://nodejs.org
-2. Install dependencies:
-   ```bash
-   cd growthlens-ai
-   npm install
-   ```
-3. Run dev server:
-   ```bash
-   npm run dev
-   ```
-4. Open http://localhost:3000
+### 1. Granular Role-Based Access Control (RBAC)
+- **Investor**: Search curated startups, view financial disclosures, run AI health audits, chat with founders, and allocate simulated capital.
+- **Startup Founder**: Onboard verified venture profiles, report quarterly metrics (revenue, burn rate, valuation, turnover), and apply for non-dilutive credit lines.
+- **Banking Partners**: Review enterprise loan applications, assess risk-weighted asset metrics, and approve/reject underwriting requests.
+- **Platform Admin**: Supervise marketplace listings, approve startup onboardings, and monitor platform-wide investment volume.
 
-## Demo Flow
+### 2. Algorithmic Due Diligence & Solvency Scoring
+- **Automated Solvency Score (0-100)**: Evaluates burn-to-revenue ratio, net margin trajectory, and customer acquisition velocity.
+- **Risk Indicator Tagging**: Flags runway risks, negative operating margins, and high leverage flags before investor capital commitment.
+- **Interactive Visual Telemetry**: High-resolution financial charting via **Recharts** for burn-down analysis, revenue growth vs. overhead, and valuation benchmarks.
 
-1. **Sign Up** as Startup Owner → Register a startup → Add business metrics (Admin must approve first)
-2. **Sign Up** as Admin → Approve the startup
-3. **Sign Up** as Investor → Browse startups → Click startup → Analyze with AI → Ask AI → Invest
-4. **Sign Up** as Bank → See loan requests from startups → Approve/Reject
+### 3. Contextual AI Investment Analyst
+- Embedded conversational assistant for due diligence inquiries.
+- Real-time answers on runway projections, margin sustainability, and valuation sanity checks.
 
-## Tech Stack
+---
 
-- Next.js 14, React, TypeScript
-- Tailwind CSS
-- Recharts
-- localStorage for data (no backend required for demo)
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 14 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS, Lucide React Icons
+- **Data Visualization**: Recharts
+- **State Architecture**: Client-Side Persistent Reactive Store (Local Cache)
+
+---
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Node.js 18.0 or higher
+- npm or yarn
+
+### Installation
+`ash
+# Clone repository
+git clone https://github.com/ranvijay123987/GrowthLens.git
+cd GrowthLens
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+`
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
+## 📊 Evaluation Flow for Reviewers
+
+1. **Sign Up as Founder**: Submit a startup listing with revenue and monthly burn metrics.
+2. **Switch to Admin**: Navigate to /admin to verify and approve the listing.
+3. **Switch to Investor**: Explore the startup directory, launch the **AI Investment Analyst**, review the financial health scorecard, and execute a simulated pledge.
+4. **Switch to Bank**: Review pending loan underwriting requests under /bank.
+
+---
+
+## 📄 License
+MIT License. Created by [Ranvijay Sharma](https://github.com/ranvijay123987).
